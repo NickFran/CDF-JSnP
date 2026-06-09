@@ -1,0 +1,19 @@
+{
+  "name": "cdf-jsnp",
+  "version": "0.1.0",
+  "description": "A small JavaScript-to-Python bridge for working with NetCDF files through a persistent child process.",
+  "main": "./src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "smoke": "node ./test/smoke.js"
+  },
+  "keywords": [
+    "netcdf",
+    "xarray",
+    "python",
+    "child-process",
+    "electron",
+    "bridge"
+  ],
+  "license": "MIT"
+}
