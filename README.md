@@ -1,9 +1,17 @@
+Over the winter and spring of 2025, I built NetSeaDF to work with .nc files.
+Due to Python and JS being each other opposites in-terms of data science and UI, I wanted the best of both worlds.
+In turn, I wrote a small internal system to the application that allows JS to directly call Python functions so that JS can utilize python libraries.
+After I wrapped up development on NetSeaDF, I detatched that internal framework from the app and made it into what is now this,
+CDF-JSnP.
+
 # CDF-JSnP
 
-CDF-JSnP is a small framework for calling Python NetCDF code from JavaScript through a persistent child process. It extracts the reusable bridge pattern from an Electron app and turns it into a standalone library.
+CDF-JSnP is a small framework for calling Python NetCDF function from JavaScript through a persistent child process. It extracts the reusable bridge pattern from NetSeaDF and turns it into a standalone library.
+
+## Purpose
+- By using this system, it allows JavaScript to directly call pythons xarray and numpy, allowing JS to leverage python's fantastic data science abilities while obviously also leveraging its own UI abilities via HTML/CSS.
 
 ## What it provides
-
 - A generic request-response Python bridge for JavaScript.
 - A NetCDF adapter backed by `xarray`.
 - Python launch helpers for bundled runtimes or user-managed system Python.
