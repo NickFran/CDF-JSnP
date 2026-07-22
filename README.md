@@ -110,11 +110,9 @@ Run them from the repository root with `node .\examples\<file>.js`.
 - `bulk_sound_speed`
 - `list_commands`
 
-The runtime also accepts the original NetSeaDF-style command names as compatibility aliases.
-
 ## Validation
 
-Run the smoke test:
+Run the test:
 
 ```powershell
 npm run smoke
